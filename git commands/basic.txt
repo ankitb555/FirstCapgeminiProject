@@ -1,0 +1,19 @@
+git init --bare
+
+git remote add <ankit> "link to remote repository"
+
+git pull <ankit> master
+
+git add <file name> -m "Add message here"
+git add -A 
+
+// for local repository 
+git commit <filename> -m "Message here"
+git commit -a -m "Message here"
+
+//last rollback
+git checkout <filename>
+
+//up to certain point
+git log 
+git checkout "hexadecimal no" <filename>

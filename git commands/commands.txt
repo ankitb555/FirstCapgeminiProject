@@ -12,3 +12,520 @@ From https://github.com/ankitb555/FirstCapgeminiProject
 
 DIN66009698+learning@DIN66009698 MINGW64 /c/Ankitb (master)
 $
+
+
+
+DIN66009698+learning@DIN66009698 MINGW64 /c/Ankitb (master)
+$  git remote add origin "https://github.com/ankitb555/FirstCapgeminiProject.git"                                                                                                                          
+DIN66009698+learning@DIN66009698 MINGW64 /c/Ankitb (master)
+$ git pull origin master
+remote: Counting objects: 3, done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/ankitb555/FirstCapgeminiProject
+ * branch            master     -> FETCH_HEAD
+ * [new branch]      master     -> origin/master
+
+DIN66009698+learning@DIN66009698 MINGW64 /c/Ankitb (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        git commands/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+DIN66009698+learning@DIN66009698 MINGW64 /c/Ankitb (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        file1.txt
+        file2.txt
+        git commands/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+DIN66009698+learning@DIN66009698 MINGW64 /c/Ankitb (master)
+$ git add file1.txt
+
+DIN66009698+learning@DIN66009698 MINGW64 /c/Ankitb (master)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Aborting commit due to empty commit message.
+
+DIN66009698+learning@DIN66009698 MINGW64 /c/Ankitb (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   file1.txt
+        new file:   file2.txt
+        new file:   git commands/commands.txt
+
+
+DIN66009698+learning@DIN66009698 MINGW64 /c/Ankitb (master)
+$ git commit -a -m "This is commit"
+[master d0c81a2] This is commit
+ Committer: learning <learning@DIN66009698.corp.capgemini.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 3 files changed, 14 insertions(+)
+ create mode 100644 file1.txt
+ create mode 100644 file2.txt
+ create mode 100644 git commands/commands.txt
+
+DIN66009698+learning@DIN66009698 MINGW64 /c/Ankitb (master)
+$
+
+DIN66009698+learning@DIN66009698 MINGW64 /c/Ankitb (master)
+$ git add file2.txt
+
+DIN66009698+learning@DIN66009698 MINGW64 /c/Ankitb (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+DIN66009698+learning@DIN66009698 MINGW64 /c/Ankitb (master)
+$ git commit file2.txt -m "This is second commit"
+On branch master
+nothing to commit, working tree clean
+
+DIN66009698+learning@DIN66009698 MINGW64 /c/Ankitb (master)
+$ git add -A
+
+DIN66009698+learning@DIN66009698 MINGW64 /c/Ankitb (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   file1.txt
+        modified:   file2.txt
+
+
+DIN66009698+learning@DIN66009698 MINGW64 /c/Ankitb (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   file1.txt
+        modified:   file2.txt
+
+
+DIN66009698+learning@DIN66009698 MINGW64 /c/Ankitb (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   file1.txt
+        modified:   file2.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   file1.txt
+        modified:   file2.txt
+
+
+DIN66009698+learning@DIN66009698 MINGW64 /c/Ankitb (master)
+$ git commit -a -m "Direct Commit"
+[master 9359ce9] Direct Commit
+ Committer: learning <learning@DIN66009698.corp.capgemini.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 2 insertions(+)
+
+DIN66009698+learning@DIN66009698 MINGW64 /c/Ankitb (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+DIN66009698+learning@DIN66009698 MINGW64 /c/Ankitb (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   file1.txt
+        modified:   file2.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        file3.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+DIN66009698+learning@DIN66009698 MINGW64 /c/Ankitb (master)
+$ git commit -a -m "All files together"
+[master d691e5d] All files together
+ Committer: learning <learning@DIN66009698.corp.capgemini.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+DIN66009698+learning@DIN66009698 MINGW64 /c/Ankitb (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        file3.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+DIN66009698+learning@DIN66009698 MINGW64 /c/Ankitb (master)
+$ git add file3.txt
+
+DIN66009698+learning@DIN66009698 MINGW64 /c/Ankitb (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   file3.txt
+
+
+DIN66009698+learning@DIN66009698 MINGW64 /c/Ankitb (master)
+$ git commit file3.txt -m "File 3 saved"
+[master 96e76ee] File 3 saved
+ Committer: learning <learning@DIN66009698.corp.capgemini.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+ create mode 100644 file3.txt
+
+DIN66009698+learning@DIN66009698 MINGW64 /c/Ankitb (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+DIN66009698+learning@DIN66009698 MINGW64 /c/Ankitb (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   file3.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+DIN66009698+learning@DIN66009698 MINGW64 /c/Ankitb (master)
+$ git checkout file3.txt
+
+DIN66009698+learning@DIN66009698 MINGW64 /c/Ankitb (master)
+$ $ cat file3.txt
+bash: $: command not found
+
+DIN66009698+learning@DIN66009698 MINGW64 /c/Ankitb (master)
+$ cat file3.txt
+adfasdfedfasdf
+DIN66009698+learning@DIN66009698 MINGW64 /c/Ankitb (master)
+$ git log
+commit 96e76eebbc7e7250e58edb963c72990e2f73f521 (HEAD -> master)
+Author: learning <learning@DIN66009698.corp.capgemini.com>
+Date:   Thu Oct 12 17:07:51 2017 +0530
+
+    File 3 saved
+
+commit d691e5dbf60c7fbba1fcff8316774800c0a18573
+Author: learning <learning@DIN66009698.corp.capgemini.com>
+Date:   Thu Oct 12 17:06:15 2017 +0530
+
+    All files together
+
+commit 9359ce98428f3cfaec4f53dfa0ae34abab7388ba
+Author: learning <learning@DIN66009698.corp.capgemini.com>
+Date:   Thu Oct 12 17:04:38 2017 +0530
+
+    Direct Commit
+
+commit d0c81a2cc0e7252ac51d5f9a18c2db8a91b30dc0
+Author: learning <learning@DIN66009698.corp.capgemini.com>
+Date:   Thu Oct 12 16:56:32 2017 +0530
+
+    This is commit
+
+commit 5633091204b2692442eb4fcdda56f35562f8f1c8 (origin/master)
+Author: ankitb555 <32734913+ankitb555@users.noreply.github.com>
+Date:   Thu Oct 12 15:53:45 2017 +0530
+
+    Initial commit
+
+DIN66009698+learning@DIN66009698 MINGW64 /c/Ankitb (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   file3.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+DIN66009698+learning@DIN66009698 MINGW64 /c/Ankitb (master)
+$ git commit file3.txt -m  "Last commit"
+[master 6b67726] Last commit
+ Committer: learning <learning@DIN66009698.corp.capgemini.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+DIN66009698+learning@DIN66009698 MINGW64 /c/Ankitb (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+DIN66009698+learning@DIN66009698 MINGW64 /c/Ankitb (master)
+$ git log
+commit 6b6772666c4c934dd6f563fdf4077708adff30ff (HEAD -> master)
+Author: learning <learning@DIN66009698.corp.capgemini.com>
+Date:   Thu Oct 12 17:13:10 2017 +0530
+
+    Last commit
+
+commit 96e76eebbc7e7250e58edb963c72990e2f73f521
+Author: learning <learning@DIN66009698.corp.capgemini.com>
+Date:   Thu Oct 12 17:07:51 2017 +0530
+
+    File 3 saved
+
+commit d691e5dbf60c7fbba1fcff8316774800c0a18573
+Author: learning <learning@DIN66009698.corp.capgemini.com>
+Date:   Thu Oct 12 17:06:15 2017 +0530
+
+    All files together
+
+commit 9359ce98428f3cfaec4f53dfa0ae34abab7388ba
+Author: learning <learning@DIN66009698.corp.capgemini.com>
+Date:   Thu Oct 12 17:04:38 2017 +0530
+
+    Direct Commit
+
+commit d0c81a2cc0e7252ac51d5f9a18c2db8a91b30dc0
+Author: learning <learning@DIN66009698.corp.capgemini.com>
+Date:   Thu Oct 12 16:56:32 2017 +0530
+
+    This is commit
+
+commit 5633091204b2692442eb4fcdda56f35562f8f1c8 (origin/master)
+Author: ankitb555 <32734913+ankitb555@users.noreply.github.com>
+Date:   Thu Oct 12 15:53:45 2017 +0530
+
+    Initial commit
+
+DIN66009698+learning@DIN66009698 MINGW64 /c/Ankitb (master)
+$ ^C
+
+DIN66009698+learning@DIN66009698 MINGW64 /c/Ankitb (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+DIN66009698+learning@DIN66009698 MINGW64 /c/Ankitb (master)
+$ ls
+ file1.txt   file2.txt   file3.txt  'git commands'/   README.md
+
+DIN66009698+learning@DIN66009698 MINGW64 /c/Ankitb (master)
+$ git log
+commit 6b6772666c4c934dd6f563fdf4077708adff30ff (HEAD -> master)
+Author: learning <learning@DIN66009698.corp.capgemini.com>
+Date:   Thu Oct 12 17:13:10 2017 +0530
+
+    Last commit
+
+commit 96e76eebbc7e7250e58edb963c72990e2f73f521
+Author: learning <learning@DIN66009698.corp.capgemini.com>
+Date:   Thu Oct 12 17:07:51 2017 +0530
+
+    File 3 saved
+
+commit d691e5dbf60c7fbba1fcff8316774800c0a18573
+Author: learning <learning@DIN66009698.corp.capgemini.com>
+Date:   Thu Oct 12 17:06:15 2017 +0530
+
+    All files together
+
+commit 9359ce98428f3cfaec4f53dfa0ae34abab7388ba
+Author: learning <learning@DIN66009698.corp.capgemini.com>
+Date:   Thu Oct 12 17:04:38 2017 +0530
+
+    Direct Commit
+
+commit d0c81a2cc0e7252ac51d5f9a18c2db8a91b30dc0
+Author: learning <learning@DIN66009698.corp.capgemini.com>
+Date:   Thu Oct 12 16:56:32 2017 +0530
+
+    This is commit
+
+commit 5633091204b2692442eb4fcdda56f35562f8f1c8 (origin/master)
+Author: ankitb555 <32734913+ankitb555@users.noreply.github.com>
+Date:   Thu Oct 12 15:53:45 2017 +0530
+
+    Initial commit
+
+DIN66009698+learning@DIN66009698 MINGW64 /c/Ankitb (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   file3.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+DIN66009698+learning@DIN66009698 MINGW64 /c/Ankitb (master)
+$ git commit file3.txt -m "File 3 committe"
+[master 92ba05d] File 3 committe
+ Committer: learning <learning@DIN66009698.corp.capgemini.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+DIN66009698+learning@DIN66009698 MINGW64 /c/Ankitb (master)
+$ gut status
+bash: gut: command not found
+
+DIN66009698+learning@DIN66009698 MINGW64 /c/Ankitb (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+DIN66009698+learning@DIN66009698 MINGW64 /c/Ankitb (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+DIN66009698+learning@DIN66009698 MINGW64 /c/Ankitb (master)
+$ git log
+commit 92ba05dbf8b6859947cf74a2ae16a3f68c9f2af0 (HEAD -> master)
+Author: learning <learning@DIN66009698.corp.capgemini.com>
+Date:   Thu Oct 12 17:18:53 2017 +0530
+
+    File 3 committe
+
+commit 6b6772666c4c934dd6f563fdf4077708adff30ff
+Author: learning <learning@DIN66009698.corp.capgemini.com>
+Date:   Thu Oct 12 17:13:10 2017 +0530
+
+    Last commit
+
+commit 96e76eebbc7e7250e58edb963c72990e2f73f521
+Author: learning <learning@DIN66009698.corp.capgemini.com>
+Date:   Thu Oct 12 17:07:51 2017 +0530
+
+    File 3 saved
+
+commit d691e5dbf60c7fbba1fcff8316774800c0a18573
+Author: learning <learning@DIN66009698.corp.capgemini.com>
+Date:   Thu Oct 12 17:06:15 2017 +0530
+
+    All files together
+
+commit 9359ce98428f3cfaec4f53dfa0ae34abab7388ba
+Author: learning <learning@DIN66009698.corp.capgemini.com>
+Date:   Thu Oct 12 17:04:38 2017 +0530
+
+    Direct Commit
+
+commit d0c81a2cc0e7252ac51d5f9a18c2db8a91b30dc0
+Author: learning <learning@DIN66009698.corp.capgemini.com>
+Date:   Thu Oct 12 16:56:32 2017 +0530
+
+    This is commit
+
+commit 5633091204b2692442eb4fcdda56f35562f8f1c8 (origin/master)
+Author: ankitb555 <32734913+ankitb555@users.noreply.github.com>
+Date:   Thu Oct 12 15:53:45 2017 +0530
+
+    Initial commit
+
+DIN66009698+learning@DIN66009698 MINGW64 /c/Ankitb (master)
+$ git checkout
