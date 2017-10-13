@@ -17,3 +17,16 @@ git checkout <filename>
 //up to certain point
 git log 
 git checkout "hexadecimal no" <filename>
+
+// perspective
+gitk
+
+//create branch
+git branch firstbranch 
+//checkout of branch
+git checkout firstbranch
+git checkout master
+
+
+//merge branch
+git merge firstbranch
